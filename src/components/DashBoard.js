@@ -22,7 +22,12 @@ class DashBoard extends Component {
                 >
                   Edit
                 </Link>
-                <button className="ui basic red button">Delete</button>
+                <Link
+                  to={`/register/delete/${student["Student id"]}`}
+                  className="ui basic red button"
+                >
+                  Delete
+                </Link>
               </div>
             </div>
           </div>

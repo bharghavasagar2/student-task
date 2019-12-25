@@ -6,6 +6,8 @@ export default (state = [], action) => {
       return state.map(student =>
         student.name === action.payload.name ? action.payload : student
       );
+    case "DELETE":
+      return state.filter(student => student["Student id"] !== action.payload);
     default:
       return state;
   }
